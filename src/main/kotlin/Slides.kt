@@ -639,7 +639,7 @@ fun main() {
                         iframe {
                             width = "560"
                             height = "315"
-                            src = "https://www.youtube.com/watch?v=HGhtFdmL4-U"
+                            src = "https://www.youtube.com/embed/HGhtFdmL4-U"
                             title = "YouTube video player"
                             attributes["frameborder"] = "0"
                             attributes["allow"] = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
