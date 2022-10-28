@@ -21,7 +21,7 @@ fun main() {
     kslides {
 
         output {
-            // Write the presentation's html files to /docs for Github Pages or netlify.com
+            // Write the presentation's html files to /docs for GitHub Pages or netlify.com
             enableFileSystem = true
 
             // Run locally or on Heroku
@@ -41,7 +41,7 @@ fun main() {
             transition = Transition.SLIDE
             transitionSpeed = Speed.SLOW
 
-            topLeftHref = "https://github.com/flamerecca/2022JCConf/"
+            topLeftHref = "https://github.com/flamerecca/2022GDGTaichungDevFest/"
             topLeftTitle = "View presentation source on Github"
 
             topRightHref = "/"  // Assign to "" to turn this off
@@ -97,8 +97,8 @@ fun main() {
 
                 content {
                     """
-                    ## 演講的投影片還沒做，就用 Kotlin 做一個吧
-                    ### JCConf 2022 
+                    ## DevFest 的投影片還沒做，就用 Kotlin 做一個吧
+                    ### GDG Taichung DevFest 2022 
                     """
                 }
             }
@@ -113,14 +113,14 @@ fun main() {
                 markdownSlide {
                     content {
                         """
-                        ## 在 COSCUP 的時候
+                        ## 在徵稿的時候
                         """
                     }
                 }
                 markdownSlide {
                     content {
                         """
-                        ![duke](https://i.imgur.com/1xZyc8P.png)
+                        ![GDG Taichung](https://i.imgur.com/JAVY3nL.png)
                         
                         ：要不要來講一場
                         """
@@ -129,39 +129,25 @@ fun main() {
                 markdownSlide {
                     content {
                         """
-                        ## ：我投影片都還沒做 要講什麼
+                        ## ：JCConf 我講用 Kotlin 做投影片
                         """
                     }
                 }
                 markdownSlide {
                     content {
                         """
-                        ## ：不然我用 Kotlin 寫投影片好了
+                        ![GDG Taichung](https://i.imgur.com/JAVY3nL.png)
+
+                        ：用 Kotlin 做投影片？好有趣的感覺 XD
                         """
                     }
                 }
                 markdownSlide {
                     content {
                         """
-                        ![duke](https://i.imgur.com/1xZyc8P.png)
-                        
-                        ：蛤
-                        """
-                    }
-                }
-                markdownSlide {
-                    content {
-                        """
-                        ![clam](https://i.imgur.com/FXevu7K.jpeg)
-                        
-                        ：蛤
-                        """
-                    }
-                }
-                markdownSlide {
-                    content {
-                        """
-                        # 虫合
+                        ![GDG Taichung](https://i.imgur.com/JAVY3nL.png)
+
+                        ：那就講這個題目吧
                         """
                     }
                 }
@@ -176,7 +162,7 @@ fun main() {
             markdownSlide {
                 content {
                     """
-                    ## Recca Chao
+                    ### Recca Chao
                     - 2019 年開始接觸 Kotlin ${fragment(Effect.FADE_LEFT)}
                     - JCConf Taiwan 2020 ${fragment(Effect.FADE_LEFT)}
                         - Kotlin coroutine 簡介 ${fragment(Effect.FADE_LEFT)}
@@ -186,11 +172,79 @@ fun main() {
                     - MOPCON 2021 ${fragment(Effect.FADE_LEFT)}
                         - Kotlin 的自動測試怎麼做？ ${fragment(Effect.FADE_LEFT)}
                     - 2021 Kotlin 中文開發者大會 Online ${fragment(Effect.FADE_LEFT)}
+                    - 2022 COSCUP ${fragment(Effect.FADE_LEFT)}
+                    - JCConf Taiwan 2022 ${fragment(Effect.FADE_LEFT)}
                     """
                 }
             }
-
             verticalSlides {
+                markdownSlide {
+                    content {
+                        """
+                        ## 什麼是 Kotlin?
+                        
+                        ![Kotlin](https://i.imgur.com/9x4aaV7.png)
+                        """
+                    }
+                }
+                markdownSlide {
+                    content {
+                        """
+                        ![Kotlin](https://i.imgur.com/9x4aaV7.png)
+                        
+                        2011 年由 JetBrains 開發的程式語言
+                        """
+                    }
+                }
+                markdownSlide {
+                    content {
+                        """
+                        ![Kotlin](https://i.imgur.com/9x4aaV7.png)
+                        
+                        Google I/O 2017 中
+                        
+                        宣布在 Android 上為 Kotlin 提供最佳支援。
+                        """
+                    }
+                }
+                markdownSlide {
+                    content {
+                        """
+                        ![Kotlin](https://i.imgur.com/9x4aaV7.png)
+                        
+                        # 簡潔
+                        """
+                    }
+                }
+                markdownSlide {
+                    content {
+                        """
+                        ![Kotlin](https://i.imgur.com/9x4aaV7.png)
+                        
+                        # 安全
+                        """
+                    }
+                }
+                dslSlide {
+                    content {
+                        img {
+                            alt = "JavaScript"
+                            src =
+                                "https://img.alicdn.com/imgextra/i3/920047786/TB2lwkBsrVkpuFjSspcXXbSMVXa_!!920047786.png"
+                            height = "200px"
+                        }
+                        h1 { +"和 Java 兼容" }
+                    }
+                }
+            }
+            verticalSlides {
+                markdownSlide {
+                    content {
+                        """
+                        ## 可能有的人會有疑問
+                        """
+                    }
+                }
                 markdownSlide {
                     content {
                         """
@@ -228,8 +282,8 @@ fun main() {
             
                             content {
                                 ""${'"'}
-                                ## 演講的投影片還沒做，就用 Kotlin 做一個吧
-                                ### JCConf 2022 
+                                ## DevFest 的投影片還沒做，就用 Kotlin 做一個吧
+                                ### GDG Taichung DevFest 2022 
                                 ""${'"'}
                             }
                         }
@@ -399,7 +453,6 @@ fun main() {
                     }
                 }
             }
-
             verticalSlides {
                 // image begin
                 markdownSlide {
@@ -425,7 +478,6 @@ fun main() {
                     }
                 }
             }
-
             verticalSlides {
                 dslSlide {
                     content {
@@ -444,7 +496,8 @@ fun main() {
                 dslSlide {
                     content {
                         h2 { +"什麼是 DSL" }
-                        codeSnippet { +"""
+                        codeSnippet {
+                            +"""
                             dslSlide {
                                 content {
                                     h2 { +"什麼是 DSL" }
@@ -453,12 +506,11 @@ fun main() {
                                     p { +"在特定領域做特定的事情" }
                                 }
                             }
-                        """.trimIndent() }
+                        """.trimIndent()
+                        }
                     }
                 }
             }
-
-
             verticalSlides {
                 // code1 begin
                 markdownSlide {
@@ -485,7 +537,6 @@ fun main() {
                     }
                 }
             }
-
             verticalSlides {
                 // code2 begin
                 dslSlide {
@@ -513,7 +564,6 @@ fun main() {
                     }
                 }
             }
-
             verticalSlides {
                 // code3 begin
                 for (lines in "[8-12|3-12|2-13|]".toLinePatterns()) {
@@ -547,7 +597,6 @@ fun main() {
                     }
                 }
             }
-
             verticalSlides {
                 // code4 begin
                 for (lines in "[8-12|3-12|2-13|]".toLinePatterns().zip(listOf(3, 3, 2, 1))) {
@@ -581,20 +630,112 @@ fun main() {
                     }
                 }
             }
+            verticalSlides {
+                // codeYoutube begin
+                dslSlide {
+                    id = "youtube"
+                    content {
+                        h2 { +"也可以加上 YouTube 影片" }
+                        iframe {
+                            width = "560"
+                            height = "315"
+                            src = "https://www.youtube.com/watch?v=HGhtFdmL4-U"
+                            title = "YouTube video player"
+                            attributes["frameborder"] = "0"
+                            attributes["allow"] = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
+                            attributes["allowfullscreen"] = "true"
+                        }
+                    }
+                }
+                // codeYoutube end
 
+                markdownSlide {
+                    content {
+                        """            
+                        ## 投影片程式碼寫法   
+                        ```kotlin []
+                        ${include(slides, beginToken = "codeYoutube begin", endToken = "codeYoutube end")}
+                        ```
+                        """
+                    }
+                }
+            }
             verticalSlides {
                 markdownSlide {
                     content {
                         """            
-                        ## Live Demo  
+                           ## 命令式（Imperative）
+                           ## v.s.
+                           ## 宣告式（Declarative）
+                        """
+                    }
+                }
+                markdownSlide {
+                    content {
+                        """            
+                           ## 命令式（Imperative）
+                           
+                           - ：「從火車站開始」
+                           - ：「往西南走大智北一街朝復興路四段 161巷前進」
+                           - ：「向右轉進入復興路四段/136縣道」
+                           - ：「沿民權路前往西區的台灣大道二段/台12線」
+                           - ：「沿台12線前往台灣大道四段」
+                           - ：「於國際街處迴轉」
+                           - ：「到達東海大學」
+                        """
+                    }
+                }
+                markdownSlide {
+                    content {
+                        """            
+                           ## 宣告式（Declarative）
+                           
+                           - ：「從火車站開始」
+                           - 跟計程車說：「我要去東海大學」
+                           - 一陣處理後⋯⋯
+                           - ：「到達東海大學」
+                        """
+                    }
+                }
+                markdownSlide {
+                    content {
+                        """            
+                        ## 對應我們的投影片程式碼    
+                        ```kotlin []
+                        markdownSlide {
+                            slideConfig {
+                                transition = Transition.ZOOM
+                            }
+            
+                            content {
+                                ""${'"'}
+                                ## DevFest 的投影片還沒做，就用 Kotlin 做一個吧
+                                ### GDG Taichung DevFest 2022 
+                                ""${'"'}
+                            }
+                        }
+                        ```
+                        """
+                    }
+                }
+                markdownSlide {
+                    content {
+                        """            
+                           ## 宣告式的作法
+                           ## 更適合投影片的結構
+                        """
+                    }
+                }
+            }
+            verticalSlides {
+                markdownSlide {
+                    content {
+                        """            
+                        ## Live Demo
                         
-                        在演講的現場
+                        等一下的 Code Lab
                         
-                        開始做投影片
-                        
-                        JCCONF 2022 PEKO PEKO
-                        
-                        QQ ㄋㄟ ㄋㄟ 好喝到咩噗茶
+                        會和各位一起製作投影片
                         """
                     }
                 }
@@ -634,8 +775,8 @@ fun main() {
                 content {
                     """            
                     ## 投影片網址
-                    - [https://gitpage.reccachao.net/2022JCConf/#/](https://gitpage.reccachao.net/2022JCConf/#/)
-                    - [https://github.com/flamerecca/2022JCConf](https://github.com/flamerecca/2022JCConf)
+                    - [https://gitpage.reccachao.net/2022GDGTaichungDevFest/#/](https://gitpage.reccachao.net/2022GDGTaichungDevFest/#/)
+                    - [https://github.com/flamerecca/2022GDGTaichungDevFest](https://github.com/flamerecca/2022GDGTaichungDevFest)
                     """
                 }
             }
