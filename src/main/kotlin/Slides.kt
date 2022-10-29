@@ -639,7 +639,7 @@ fun main() {
                         iframe {
                             width = "560"
                             height = "315"
-                            src = "https://www.youtube.com/embed/HGhtFdmL4-U"
+                            src = "https://www.youtube.com/embed/X8Az9X0mwUE"
                             title = "YouTube video player"
                             attributes["frameborder"] = "0"
                             attributes["allow"] = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
@@ -736,6 +736,8 @@ fun main() {
                         等一下的 Code Lab
                         
                         會和各位一起製作投影片
+                        
+                        GDG Taichung DevFest 2022
                         """
                     }
                 }
